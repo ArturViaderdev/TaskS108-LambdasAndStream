@@ -1,0 +1,4 @@
+package level1.exercise3;
+
+public class Main {
+}
