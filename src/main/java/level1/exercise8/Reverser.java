@@ -1,4 +1,6 @@
 package level1.exercise8;
 
-public class Reverser {
+@FunctionalInterface
+interface Reverser {
+    public String reverse(String text);
 }
