@@ -7,6 +7,13 @@ public class Main {
     public static void main(String[] args)
     {
         List<Object> list = new ArrayList<>();
+        addObjects(list);
+        List<String> result = filterAndOrderList(list);
+        System.out.println(result.toString());
+    }
+
+    public static void addObjects(List<Object> list)
+    {
         list.add(4);
         list.add("Pere");
         list.add(5);
@@ -17,12 +24,9 @@ public class Main {
         list.add("Filemón");
         list.add(0);
         list.add("cotxe");
-
-        List<String> result = filterAndOrderList(list);
-        System.out.println(result.toString());
     }
 
-    private static List<String> filterAndOrderList(List<Object> list)
+    public static List<String> filterAndOrderList(List<Object> list)
     {
         List<String> orderedStrings = list.stream()
                 .filter(element -> element instanceof String)
