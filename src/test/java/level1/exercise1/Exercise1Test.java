@@ -6,19 +6,15 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static level1.exercise1.Main.addVehicles;
-import static level1.exercise1.Main.filterByLetterO;
 
 public class Exercise1Test {
     @Test
     public void checkOLetterInVehicles()
     {
-        List<String> vehicles = new ArrayList<>();
-        addVehicles(vehicles);
-        List<String> result;
-        result = filterByLetterO(vehicles);
+        Program program = new Program();
+        List<String> filteredVehicles = program.addAndFilterVehicles();
         boolean correct = true;
-        for(String vehicle:result)
+        for(String vehicle:filteredVehicles)
         {
             if(!(vehicle.contains("o")))
             {
