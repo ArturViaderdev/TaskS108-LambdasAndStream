@@ -7,17 +7,13 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static level1.exercise6.Main.addObjects;
-import static level1.exercise6.Main.filterAndOrderList;
-
 public class Exercise6Test {
     @Test
     public void filterAndOrderTest()
     {
-        List<Object> list = new ArrayList<>();
-        addObjects(list);
-        List<String> result = filterAndOrderList(list);
-        Boolean correct = true;
+        Program program = new Program();
+        List<String> result = program.addObjectsFilterAndOrder();
+        boolean correct = true;
         for(int count=0;count<result.size();count++)
         {
             if(count>0)

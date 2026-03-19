@@ -6,16 +6,15 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static level1.exercise7.Main.addObjects;
-import static level1.exercise7.Main.filterAndOrderList;
+
+
 
 public class Exercise7Test {
     @Test
     public void filterAndOrderTest()
     {
-        List<Object> list = new ArrayList<>();
-        addObjects(list);
-        List<String> result = filterAndOrderList(list);
+        Program program = new Program();
+        List<String> result =  program.addObjectsFilterAndOrder();
         Boolean correct = true;
         for(int count=0;count<result.size();count++)
         {

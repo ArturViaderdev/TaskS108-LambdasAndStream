@@ -1,11 +1,10 @@
-package level1.exercise6;
+package level1.exercise7;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Program {
-    private List<Object> list;
-
+    List<Object> list;
     public Program()
     {
         list = new ArrayList<>();
@@ -13,8 +12,8 @@ public class Program {
 
     public void start()
     {
-        List<String> result = addObjectsFilterAndOrder();
-        System.out.println(result.toString());
+        List<String> list = addObjectsFilterAndOrder();
+        System.out.println(list.toString());
     }
 
     public List<String> addObjectsFilterAndOrder()
@@ -38,12 +37,12 @@ public class Program {
         list.add("cotxe");
     }
 
-    private List<String> filterAndOrderList()
+    public List<String> filterAndOrderList()
     {
         return list.stream()
                 .filter(element -> element instanceof String)
                 .map(element ->(String) element)
-                .sorted((s1,s2) -> Integer.compare(s1.length(),s2.length()))
+                .sorted((s1,s2) -> s2.length()-s1.length())
                 .toList();
     }
 }
