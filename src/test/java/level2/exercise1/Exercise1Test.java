@@ -6,16 +6,13 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static level2.exercise1.Main.addNames;
-import static level2.exercise1.Main.filterNamesStartingWithAAndHavesThreeLetters;
-
 public class Exercise1Test {
     @Test
     public void filterTest()
     {
-        List<String> names= new ArrayList<>();
-        addNames(names);
-        List<String> result = filterNamesStartingWithAAndHavesThreeLetters(names);
+        Program program = new Program();
+        program.start();
+        List<String> result = program.addAndFilterNames();
         boolean correct = true;
         for(String name:result)
         {
