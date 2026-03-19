@@ -27,7 +27,8 @@ public class Program {
     public List<String> filterByLetterO(List<String> vehicles)
     {
         List<String> result = new ArrayList<>();
-        vehicles.forEach(vehicle-> { if(vehicle.contains("o")) result.add(vehicle);});
+        //vehicles.forEach(vehicle-> { if(vehicle.contains("o")) result.add(vehicle);});
+        result=vehicles.stream().filter(vehicle->vehicle.contains("o")).toList();
         return result;
     }
 

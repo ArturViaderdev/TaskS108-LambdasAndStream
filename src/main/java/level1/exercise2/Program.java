@@ -27,7 +27,9 @@ public class Program {
     public List<String> filterByLetterOAndMinimumLength(List<String> vehicles)
     {
         List<String> result = new ArrayList<>();
-        vehicles.forEach(vehicle-> { if(vehicle.contains("o") && vehicle.length()>5) result.add(vehicle);});
+        //vehicles.forEach(vehicle-> { if(vehicle.contains("o") && vehicle.length()>5) result.add(vehicle);});
+        result = vehicles.stream().filter(vehicle-> vehicle.contains("o") && vehicle.length()>5).toList();
+
         return result;
     }
 
