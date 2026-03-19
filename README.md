@@ -11,46 +11,58 @@ The project is structured in three levels of increasing complexity.
 
 ##    Project Structure
 ````bash
-├── pom.xml
+── pom.xml
 ├── README.md
 └── src
     └── main
         └── java
             ├── level1
             │   ├── exercise1
-            │   │   └── Main.java
+            │   │   ├── ConsoleUI.java
+            │   │   ├── Main.java
+            │   │   └── Program.java
             │   ├── exercise2
-            │   │   └── Main.java
+            │   │   ├── ConsoleUI.java
+            │   │   ├── Main.java
+            │   │   └── Program.java
             │   ├── exercise3
-            │   │   └── Main.java
+            │   │   ├── Main.java
+            │   │   └── Methods.java
             │   ├── exercise4
-            │   │   └── Main.java
+            │   │   ├── Main.java
+            │   │   └── Methods.java
             │   ├── exercise5
             │   │   ├── Main.java
             │   │   └── PiValue.java
             │   ├── exercise6
-            │   │   └── Main.java
+            │   │   ├── Main.java
+            │   │   └── Program.java
             │   ├── exercise7
-            │   │   └── Main.java
+            │   │   ├── Main.java
+            │   │   └── Program.java
             │   └── exercise8
             │       ├── Main.java
             │       └── Reverser.java
             ├── level2
             │   ├── exercise1
-            │   │   └── Main.java
+            │   │   ├── Main.java
+            │   │   └── Program.java
             │   ├── exercise2
-            │   │   └── Main.java
+            │   │   ├── Main.java
+            │   │   └── Program.java
             │   ├── exercise3
             │   │   ├── Main.java
-            │   │   └── Operator.java
+            │   │   ├── Operator.java
+            │   │   └── Program.java
             │   └── exercise4
-            │       └── Main.java
+            │       ├── Main.java
+            │       └── Program.java
             └── level3
                 └── exercise1
                     ├── Main.java
                     ├── Methods.java
+                    ├── Program.java
                     └── Student.java
-
 ````
 
 ## 🚀 Instal.lation and Execution
